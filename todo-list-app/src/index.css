@@ -19,3 +19,27 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
+.todo-filter{
+  display: flex;
+  margin: 10px 0 10px 0;
+
+}
+
+.todo-container-list{
+  display: flex !important;
+  padding: 10px;
+  font-size:15px;
+}
+
+.todo-container-list-done{
+  display: flex !important;
+  padding: 10px;
+  font-size:15px;
+  text-decoration: line-through;
+  background-color:lightgray;
+}
+
+.todo-item-operate{
+
+}
