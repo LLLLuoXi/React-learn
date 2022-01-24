@@ -1,6 +1,6 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-01-23 23:16:48
+ * @LastEditTime: 2022-01-24 22:03:03
  * @LastEditors: your name
  * @Description:
  */
@@ -9,9 +9,9 @@ import React from "react";
 import { List } from "antd";
 import { CloseCircleOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import { STATUS } from "../../config/status";
+
 const ToDoContainer = (props) => {
   const { todos = [], onOperate, filterStatus } = props;
-  
   console.log("todos", todos);
   const handleOperate = (operate, item) => {
     console.log(operate, item);
@@ -39,6 +39,7 @@ const ToDoContainer = (props) => {
     return (
       todo.status != STATUS.IS_DELETE &&
       filterStatus.indexOf(todo.status.toString()) > -1
+      
     );
   });
 

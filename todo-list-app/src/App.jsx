@@ -1,15 +1,17 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-01-23 23:49:02
+ * @LastEditTime: 2022-01-24 22:12:40
  * @LastEditors: your name
  * @Description:
  */
 import { useState } from "react";
+import { message } from "antd";
+import { STATUS } from "./config/status";
 import ToDoItem from "./components/ToDoItem";
 import ToDoContainer from "./components/ToDoContainer";
 import ToDoFilter from "./components/ToDoFilter";
-import { STATUS } from "./config/status";
-import { message } from "antd";
+
+
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -19,7 +21,7 @@ function App() {
   );
 
   const handleSubmit = (todoItem) => {
-    if (todos.length === 0) {
+    if (Object.keys(todoItem).length === 0) {
       message.error("请输入代办事项");
       return;
     }

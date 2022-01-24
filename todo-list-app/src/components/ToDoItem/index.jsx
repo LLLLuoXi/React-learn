@@ -1,11 +1,11 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-01-23 23:46:35
+ * @LastEditTime: 2022-01-24 22:03:43
  * @LastEditors: your name
  * @Description:
  */
 import React, { useState } from "react";
-import { Input, Button, message } from "antd";
+import { Input, Button } from "antd";
 import { STATUS } from "../../config/status";
 const ToDoItem = (props) => {
   const { onSubmit } = props;
@@ -23,7 +23,7 @@ const ToDoItem = (props) => {
       status: STATUS.IS_CREATE,
     });
   };
-  
+
   return (
     <div className="todo-item-input">
       <Input
