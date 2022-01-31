@@ -1,0 +1,51 @@
+<!--
+ * @Author: luoxi
+ * @LastEditTime: 2022-01-31 20:00:56
+ * @LastEditors: your name
+ * @Description: 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- React核心库，与宿主环境无关 -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <!-- 依赖核心库，将核心库的功能与页面结合 -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <!-- 编译JSX -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      //原始写法
+      // const span = React.createElement("span", {}, "一个span元素");
+      const span = <span>一个span元素</span>;
+      // const h1 = React.createElement(
+      //   "h1",
+      //   {
+      //     title: "一个React元素",
+      //   },
+      //   "hello world",
+      //   span
+      // );
+      const h1 = (
+        <h1 title="一个React元素">
+          hello world<span>一个span元素</span>
+        </h1>
+      );
+      ReactDOM.render(h1, document.getElementById("root"));
+      // ReactDOM 把 react元素变成真实的Dom对象
+    </script>
+  </body>
+</html>
