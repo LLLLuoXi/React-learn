@@ -1,6 +1,6 @@
 <!--
  * @Author: luoxi
- * @LastEditTime: 2022-01-31 20:27:25
+ * @LastEditTime: 2022-02-01 13:15:02
  * @LastEditors: your name
  * @Description: 
 -->
@@ -11,6 +11,6 @@
 后续参数：元素的子节点
 
 # JSX
-JS的扩展语法，需要使用babel进行转义,为了方便书写。
+JS的扩展语法，需要使用babel进行转义,为了方便书写。详情请看[JSX](./JSX.md)  
 
 > React.createElement生成React元素，ReactDOM 再把 React元素变成真实的Dom对象
