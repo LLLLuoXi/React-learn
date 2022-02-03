@@ -1,6 +1,6 @@
 <!--
  * @Author: luoxi
- * @LastEditTime: 2022-01-28 23:55:37
+ * @LastEditTime: 2022-02-01 20:53:50
  * @LastEditors: your name
  * @Description: 
 -->
@@ -64,7 +64,7 @@ ESM打包器：一开始就是一个 Server ready状态，我们通过HTTP reque
 <aside>
 💡 为什么Vite在生产环境还需要利用Rollup来打包呢？
 
-</aside>
+</aside>  
 
 <aside>
 💡 这是由于嵌套导入会导致额外的网络往返，在生产环境的发布未打包ESM仍然是效率比较低的，而且浏览器支持目前并不是很好。
