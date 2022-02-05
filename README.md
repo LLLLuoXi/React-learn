@@ -1,6 +1,6 @@
 <!--
  * @Author: luoxi
- * @LastEditTime: 2022-02-01 13:21:58
+ * @LastEditTime: 2022-02-05 23:50:05
  * @LastEditors: your name
  * @Description: 
 -->
@@ -10,3 +10,4 @@ some of React practice and notes
 - 📖 [Vite概念&&设计理念](./notes/Vite概念&&设计理念.md)  
 - 📖 [React.createElement](./notes/React.createElement.md)  
 - 📖 [JSX](./notes/JSX.md)  
+- 📖 [组件](./notes/组件.md)  
